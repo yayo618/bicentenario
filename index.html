@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exposición Virtual Bicentenario</title>
+    <style>
+      body {
+	  margin: 0;
+	  touch-action: none;
+      }
+      canvas {
+	  display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="three.min.js"></script>
+    <script src="moveTouch.js"></script>
+    <script>
+      var friction = 0.2;
+      var xspeed = 0;
+      var zspeed = 0;
+      var nsx = 0;
+      var nsz = 0;
+      var det = false;
+      var angle = 0;
+      var cosy, siny;
+      var x = 0;
+      var z = 2500;
+      
+      var scene, camera, renderer;
+      scene = new THREE.Scene();
+      camera = new THREE.PerspectiveCamera(60,
+        window.innerWidth/window.innerHeight);
+/*    var viewSize = 40;
+      var aspectRatio = window.innerWidth/window.innerHeight;
+      camera = new THREE.OrthographicCamera(
+	  -aspectRatio*viewSize/2,
+	  aspectRatio*viewSize/2,
+	  viewSize/2,
+	  -viewSize/2,
+	  3,
+	  100
+      );
+      camera.position.y = 25;
+      camera.rotation.x = -Math.PI/2;*/
+
+      renderer = new THREE.WebGLRenderer();
+      
+      renderer.setSize(window.innerWidth,window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+
+      //bord
+      var borders = [];
+//    var collider;
+//    var bGeo = new THREE.PlaneGeometry(1,1);
+//    var bMat = new THREE.MeshBasicMaterial({color:0x0000ff});
+      for (var i = 0; i < 9; i++) {
+	  borders.push({x:-10000, z:-5000+(i*1000), w:1000, h:1000});
+      }
+      for (var i = 0; i < 19; i++) {
+	  borders.push({x:-9000+(i*1000), z:5000, w:1000, h:1000});
+      }
+      for (var i = 0; i < 19; i++) {
+	  borders.push({x:-9000+(i*1000), z:-5000, w:1000, h:1000});
+      }
+      for (var i = 0; i < 9; i++) {
+	  borders.push({x:10000, z:-5000+(i*1000), w:1000, h:1000});
+      }      
+      
+      function drawScene(){
+	  renderer.render(scene,camera);
+	  requestAnimationFrame(drawScene);
+	  mueve();
+/*	  
+	  for (var i = 0; i < borders.length; i++) {
+	      collider = new THREE.Mesh(bGeo, bMat);
+	      collider.rotation.x = -Math.PI/2;
+	      collider.position.set(borders[i].x/1000,-2,borders[i].z/1000);
+	      scene.add(collider);
+	  }
+*/
+      }
+      drawScene();
+
+
+    </script>
+    <script src="galeria.js"></script>
+  </body>
+</html>
