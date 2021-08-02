@@ -147,8 +147,8 @@ var cdrB5 = new THREE.Mesh(
     new THREE.BoxGeometry(1722/1000,437/1000,0.05,0),
     new THREE.MeshBasicMaterial({color:0x232117})
 );
-cdr5.position.set((5*2)-10.5,0,-4.9);
-cdrB5.position.set((5*2)-10.5,0,-4.925);
+cdr5.position.set(0.15,0,-4.9);
+cdrB5.position.set(0.15,0,-4.925);
 scene.add(cdr5,cdrB5);
 //etiqueta 5
 var txq5 = new THREE.TextureLoader().load("img/etiq/e5.jpg");
@@ -156,7 +156,7 @@ var etq5 = new THREE.Mesh(
     new THREE.PlaneGeometry(0.405,0.166),
     new THREE.MeshBasicMaterial({color:0xffffff,map:txq5})
 );
-etq5.position.set((5*2)-10.6+0.9,0,-4.99);
+etq5.position.set(1.3,0,-4.99);
 scene.add(etq5);
 
 //cuadro 6
@@ -170,8 +170,8 @@ var cdrB6 = new THREE.Mesh(
     new THREE.BoxGeometry(773/1000,1120/1000,0.05,0),
     new THREE.MeshBasicMaterial({color:0x232117})
 );
-cdr6.position.set((6*2)-10.5,0,-4.9);
-cdrB6.position.set((6*2)-10.5,0,-4.925);
+cdr6.position.set(2.5,0,-4.9);
+cdrB6.position.set(2.5,0,-4.925);
 scene.add(cdr6,cdrB6);
 //etiqueta 6
 var txq6 = new THREE.TextureLoader().load("img/etiq/e6.jpg");
@@ -179,7 +179,7 @@ var etq6 = new THREE.Mesh(
     new THREE.PlaneGeometry(0.405,0.166),
     new THREE.MeshBasicMaterial({color:0xffffff,map:txq6})
 );
-etq6.position.set((6*2)-10.6+0.9,0,-4.99);
+etq6.position.set(3.3,0,-4.99);
 scene.add(etq6);
 
 //cuadro 7
@@ -193,8 +193,8 @@ var cdrB7 = new THREE.Mesh(
     new THREE.BoxGeometry(772/1000,1052/1000,0.05,0),
     new THREE.MeshBasicMaterial({color:0x232117})
 );
-cdr7.position.set((7*2)-10.5,0,-4.9);
-cdrB7.position.set((7*2)-10.5,0,-4.925);
+cdr7.position.set(4.5,0,-4.9);
+cdrB7.position.set(4.5,0,-4.925);
 scene.add(cdr7,cdrB7);
 //etiqueta 7
 var txq7 = new THREE.TextureLoader().load("img/etiq/e7.jpg");
@@ -202,7 +202,7 @@ var etq7 = new THREE.Mesh(
     new THREE.PlaneGeometry(0.405,0.166),
     new THREE.MeshBasicMaterial({color:0xffffff,map:txq7})
 );
-etq7.position.set((7*2)-10.6+0.9,0,-4.99);
+etq7.position.set(5.2,0,-4.99);
 scene.add(etq7);
 
 //cuadro 8
@@ -216,8 +216,8 @@ var cdrB8 = new THREE.Mesh(
     new THREE.BoxGeometry(1079/1000,807/1000,0.05,0),
     new THREE.MeshBasicMaterial({color:0x232117})
 );
-cdr8.position.set((8*2)-10.5,0,-4.9);
-cdrB8.position.set((8*2)-10.5,0,-4.925);
+cdr8.position.set(6.5,0,-4.9);
+cdrB8.position.set(6.5,0,-4.925);
 scene.add(cdr8,cdrB8);
 //etiqueta 8
 var txq8 = new THREE.TextureLoader().load("img/etiq/e8.jpg");
@@ -225,7 +225,7 @@ var etq8 = new THREE.Mesh(
     new THREE.PlaneGeometry(0.405,0.166),
     new THREE.MeshBasicMaterial({color:0xffffff,map:txq8})
 );
-etq8.position.set((8*2)-10.6+0.9,0,-4.99);
+etq8.position.set(7.4,0,-4.99);
 scene.add(etq8);
 
 //cuadro 9
@@ -239,8 +239,8 @@ var cdrB9 = new THREE.Mesh(
     new THREE.BoxGeometry(1061/1000,857/1000,0.05,0),
     new THREE.MeshBasicMaterial({color:0x232117})
 );
-cdr9.position.set((9*2)-10.5,0,-4.9);
-cdrB9.position.set((9*2)-10.5,0,-4.925);
+cdr9.position.set(8.5,0,-4.9);
+cdrB9.position.set(8.5,0,-4.925);
 scene.add(cdr9,cdrB9);
 //etiqueta 9
 var txq9 = new THREE.TextureLoader().load("img/etiq/e9.jpg");
@@ -248,7 +248,7 @@ var etq9 = new THREE.Mesh(
     new THREE.PlaneGeometry(0.405,0.166),
     new THREE.MeshBasicMaterial({color:0xffffff,map:txq9})
 );
-etq9.position.set((9*2)-10.6+0.9,0,-4.99);
+etq9.position.set(9.4,0,-4.99);
 scene.add(etq9);
 
 //cuadro 10
@@ -314,9 +314,9 @@ var cdrB12 = new THREE.Mesh(
     new THREE.BoxGeometry(624/1000,832/1000,0.05,0),
     new THREE.MeshBasicMaterial({color:0x232117})
 );
-cdr12.position.set(9.9,0,((12-9)*2)-6);
+cdr12.position.set(9.9,0,((12-9)*2)-6.2);
 cdr12.rotation.y -= Math.PI/2;
-cdrB12.position.set(9.925,0,((12-9)*2)-6);
+cdrB12.position.set(9.925,0,((12-9)*2)-6.2);
 cdrB12.rotation.y -= Math.PI/2;
 scene.add(cdr12,cdrB12);
 //etiqueta 12
@@ -325,7 +325,7 @@ var etq12 = new THREE.Mesh(
     new THREE.PlaneGeometry(0.405,0.166),
     new THREE.MeshBasicMaterial({color:0xffffff,map:txq12})
 );
-etq12.position.set(9.99,0,((12-9)*2)-5.2);
+etq12.position.set(9.99,0,((12-9)*2)-5.5);
 etq12.rotation.y -= Math.PI/2;
 scene.add(etq12);
 
@@ -340,9 +340,9 @@ var cdrB13 = new THREE.Mesh(
     new THREE.BoxGeometry(780/1000,1050/1000,0.05,0),
     new THREE.MeshBasicMaterial({color:0x232117})
 );
-cdr13.position.set(9.9,0,((13-9)*2)-6);
+cdr13.position.set(9.9,0,((13-9)*2)-6.3);
 cdr13.rotation.y -= Math.PI/2;
-cdrB13.position.set(9.925,0,((13-9)*2)-6);
+cdrB13.position.set(9.925,0,((13-9)*2)-6.3);
 cdrB13.rotation.y -= Math.PI/2;
 scene.add(cdr13,cdrB13);
 //etiqueta 13
@@ -351,7 +351,7 @@ var etq13 = new THREE.Mesh(
     new THREE.PlaneGeometry(0.405,0.166),
     new THREE.MeshBasicMaterial({color:0xffffff,map:txq13})
 );
-etq13.position.set(9.99,0,((13-9)*2)-5.2);
+etq13.position.set(9.99,0,((13-9)*2)-5.5);
 etq13.rotation.y -= Math.PI/2;
 scene.add(etq13);
 
@@ -366,9 +366,9 @@ var cdrB14 = new THREE.Mesh(
     new THREE.BoxGeometry(1058/1000,838/1000,0.05,0),
     new THREE.MeshBasicMaterial({color:0x232117})
 );
-cdr14.position.set(9.9,0,((14-9)*2)-6);
+cdr14.position.set(9.9,0,((14-9)*2)-6.3);
 cdr14.rotation.y -= Math.PI/2;
-cdrB14.position.set(9.925,0,((14-9)*2)-6);
+cdrB14.position.set(9.925,0,((14-9)*2)-6.3);
 cdrB14.rotation.y -= Math.PI/2;
 scene.add(cdr14,cdrB14);
 //etiqueta 14
@@ -377,7 +377,7 @@ var etq14 = new THREE.Mesh(
     new THREE.PlaneGeometry(0.405,0.166),
     new THREE.MeshBasicMaterial({color:0xffffff,map:txq14})
 );
-etq14.position.set(9.99,0,((14-9)*2)-5.2);
+etq14.position.set(9.99,0,((14-9)*2)-5.5);
 etq14.rotation.y -= Math.PI/2;
 scene.add(etq14);
 
@@ -481,7 +481,7 @@ var etq18 = new THREE.Mesh(
     new THREE.PlaneGeometry(0.405,0.166),
     new THREE.MeshBasicMaterial({color:0xffffff,map:txq18})
 );
-etq18.position.set(9.3-((18-14)*2),0,4.99);
+etq18.position.set(9.2-((18-14)*2),0,4.99);
 etq18.rotation.y += Math.PI;
 scene.add(etq18);
 
@@ -533,7 +533,7 @@ var etq20 = new THREE.Mesh(
     new THREE.PlaneGeometry(0.405,0.166),
     new THREE.MeshBasicMaterial({color:0xffffff,map:txq20})
 );
-etq20.position.set(9.3-((20-14)*2),0,4.99);
+etq20.position.set(9.2-((20-14)*2),0,4.99);
 etq20.rotation.y += Math.PI;
 scene.add(etq20);
 
