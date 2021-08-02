@@ -10,6 +10,9 @@ function mueve () {
     zspeed = (-Math.sin(angle * Math.PI/180)*nsx)
 	+(Math.cos(angle * Math.PI/180)*nsz);
 
+    //eventos teclas
+    
+
     //coll
     let hRect = {
 	x: x + xspeed,
@@ -102,3 +105,20 @@ body.addEventListener("touchend", function (e) {
     det = true;
 }, false);
 
+document.addEventListener("keydown", function (e) {
+    if (e.key === "w" || e.key === "ArrowUp") {nsz = -7; det = false;}
+    if (e.key === "s" || e.key === "ArrowDown") {nsz = 7; det = false;}
+    if (e.key === "a") {nsx = -7; det = false;}
+    if (e.key === "d") {nsx = 7; det = false;}
+    if (e.key === "ArrowLeft") {rotando(angle += 1);}
+    if (e.key === "ArrowRight") {rotando(angle -= 1);}
+});
+document.addEventListener("keyup", function (e) {
+    det = true;
+/*
+    if (e.key === "w") {det = true;}
+    if (e.key === "s") {det = true;}
+    if (e.key === "a") {det = true;}
+    if (e.key === "d") {det = true;}
+*/
+});
